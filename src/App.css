@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+    box-sizing: border-box;
+}
+  
+.Container{
+    width: 100%;
+    padding: 60px 0;
+    background: #f1f1f1;
+}
+  
+.inner-width{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+  
+.Container h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 100px;
+}
+  
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img{
+    width: 200px;
+    height: 200px;
+    margin:2px;
+    border:1px solid black;
+    border-radius: 8px;
+}
+
+img:hover{
+    border-color:#85144b;
+    opacity:0.85;
+}
+
+.arrowLeft{
+    position: absolute;
+    left: 10px;
+    top:50%;
+    font-size: 30px;
+    z-index: 1;
+    color: white;
+}
+
+.arrowLeft:hover{
+    color: black;
+}
+
+.arrowRight{
+    position: absolute;
+    right: 10px;
+    top:50%;
+    font-size: 30px;
+    z-index: 1;
+    color: white;
+}
+
+.arrowRight:hover{
+    color: black;
+}
+
+.exitIcon{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    color:black;
+    font-size: 30px;
+    z-index: 1;
+}
+
+.exitIcon:hover{
+    color: white;
+}
+
+.ContainerFullScreen{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #313131;
+}
+
+.Description, .Title{
+    font-family: 'Roboto Mono', monospace;
+    margin: 15px;
+}
+
+.ContainerImageFullScreen{
+    display: block;
+    margin: 100px auto;
+    text-align: center;
+    width: 500px;
+    height: 500px;   
+}
+
+.ContainerImageFullScreen img{
+    vertical-align: middle;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+@media screen and (max-width:500px) {
+    .ContainerImageFullScreen{
+        width: 300px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-height:650px) {
+    .ContainerImageFullScreen{
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .ContainerImageFullScreen{
+        width: 200px;
+        height: 300px;
+    }
+}
