@@ -4,9 +4,9 @@ import {useSwipeable, Swipeable} from 'react-swipeable';
 export default function FullScreenMedia(props) {
   return( 
     <div className = "ContainerFullScreen">
-      <i class="arrowLeft fas fa-arrow-circle-left" onClick = {props.handleMoveLeft}></i>
-      <i class="arrowRight fas fa-arrow-circle-right" onClick = {props.handleMoveRight}></i>
-      <i class="exitIcon far fa-times-circle" onClick = {props.handleChangeFullScreen}></i>
+      <i className="arrowLeft fas fa-arrow-circle-left" onClick = {props.handleMoveLeft}></i>
+      <i className="arrowRight fas fa-arrow-circle-right" onClick = {props.handleMoveRight}></i>
+      <i className="exitIcon far fa-times-circle" onClick = {props.handleChangeFullScreen}></i>
         
       <Swipeable onSwipedLeft = {props.handleMoveRight} onSwipedRight = {props.handleMoveLeft} className = "ContainerImageFullScreen">
         <div className = "Title">{props.array.title}</div>
